@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace SonOfCod.Models
 {
-    public class SonOfCodDbContext : DbContext
+    public class SonOfCodDbContext : IdentityDbContext<ApplicationUser>
     {
-        public SonOfCodDbContext()
-
-        {
-
-        }
         public virtual DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

@@ -25,9 +25,7 @@ namespace SonOfCod.Tests
         public void Get_ModelList_Index_Test()
         {
             //Arrange
-            ProductsController controller = new ProductsController();
-            IActionResult actionResult = controller.Index();
-            ViewResult indexView = controller.Index() as ViewResult;
+            ViewResult indexView = new ProductsController().Index() as ViewResult;
 
             //Act
             var result = indexView.ViewData.Model;

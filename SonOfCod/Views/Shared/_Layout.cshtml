@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container" id="navbar">
+            <div class="navbar-nav">
+                <div id="navlink">@Html.ActionLink("Recipes", "Index", "Account")</div>
+                <div id="navlink">@Html.ActionLink("Locations", "Index", "Account")</div>
+                <div id="navlink">@Html.ActionLink("Contact Us", "Index", "Account")</div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container" id="navbar">
+            <div class="navbar-nav">
+                <div id="navlink">@Html.ActionLink("HOME", "Index", "Account")</div>
+                <div id="navlink">@Html.ActionLink("ABOUT US", "Index", "Account")</div>
+                <div id="brand">@Html.ActionLink("PRODUCTS", "Index", "Products")</div>
+                <div id="navlink">@Html.ActionLink("REGISTER", "Index", "Newsletter")</div>
+                <div id="navlink">@Html.ActionLink("PRODUCTS", "Index", "Products")</div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer">
+        <div>@Html.ActionLink("ADMIN PORTAL", "Index", "Account")</div>
+    </div>
+</body>
+</html>
