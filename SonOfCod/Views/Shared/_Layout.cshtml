@@ -8,27 +8,26 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default" id="navbar-one" role="navigation">
         <div class="container" id="navbar">
-            <div class="navbar-nav">
-                <div id="navlink">@Html.ActionLink("Recipes", "Index", "Account")</div>
-                <div id="navlink">@Html.ActionLink("Locations", "Index", "Account")</div>
-                <div id="navlink">@Html.ActionLink("Contact Us", "Index", "Account")</div>
+            <div class="navbar-nav" id="nav-one">
+                <div id="navlink">@Html.ActionLink("Recipes", "Index", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Locations", "Index", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Contact Us", "Index", "Home")</div>
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default" id="navbar-two" role="navigation">
         <div class="container" id="navbar">
-            <div class="navbar-nav">
-                <div id="navlink">@Html.ActionLink("HOME", "Index", "Account")</div>
-                <div id="navlink">@Html.ActionLink("ABOUT US", "Index", "Account")</div>
-                <div id="brand">@Html.ActionLink("PRODUCTS", "Index", "Products")</div>
-                <div id="navlink">@Html.ActionLink("REGISTER", "Index", "Newsletter")</div>
+            <div class="navbar-nav" id="nav-two">
+                <div id="navlink">@Html.ActionLink("HOME", "Index", "Home")</div>
+                <div id="navlink">@Html.ActionLink("ABOUT US", "About", "Home")</div>
                 <div id="navlink">@Html.ActionLink("PRODUCTS", "Index", "Products")</div>
+                <div id="navlink">@Html.ActionLink("SIGN UP", "Index", "Newsletter")</div>
             </div>
         </div>
     </nav>
-    <div>
+    <div class="container">
         @RenderBody()
     </div>
     <div class="footer">

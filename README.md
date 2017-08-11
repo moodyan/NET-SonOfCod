@@ -22,12 +22,11 @@ _This website's style loosely mimics the styling of [Pacific Seafood](https://ww
 ## Setup/Installation Requirements
 
 **Requirements**
-
 If you do not have Visual Studio 2017, download [HERE](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
 If you do not have SSMS, download [HERE](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 
-**Cloning From GitHub:** Download or clone project repository onto desktop from GitHub.
+Cloning From GitHub: Download or clone project repository onto desktop from GitHub.
 
 Open the project in Visual Studio.
 
@@ -38,6 +37,10 @@ Open the project in Visual Studio.
   - dotnet ef database update
 4. Open cod_scripts.sql in SSMS and execute (this will add sample data).
 5. Back in VS, click IIS Express at the top of the window. Project should open in a new window in your default browser.
+
+**IMPORTANT!!! ADMIN LOG IN INFO**
+  - email: admin@admin.com
+  - password: Admin123!
 
 ## Screenshots
 

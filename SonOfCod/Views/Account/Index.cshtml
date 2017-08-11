@@ -5,18 +5,20 @@
 
 @using System.Security.Claims
 
-<h2>Authentication with Identity</h2>
+<h2>Welcome to the Admin Portal</h2>
 <hr />
 @if (User.Identity.IsAuthenticated)
 {
     <p>Hello @User.Identity.Name!</p>
     @using (Html.BeginForm("LogOff", "Account"))
     {
+        @Html.ActionLink("Mailing List Recipients", "Recepients", "Newsletter")
+        <br />
         <input type="submit" class="btn btn-default" value="Log out" />
     }
 }
 else
 {
-    <p>@Html.ActionLink("Register", "Register")</p>
+
     <p>@Html.ActionLink("Log in", "Login")</p>
 }
