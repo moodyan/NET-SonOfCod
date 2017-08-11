@@ -18,6 +18,7 @@ namespace SonOfCod.Models
         public SonOfCodDbContext(DbContextOptions<SonOfCodDbContext> options) : base(options)
         {
         }
+        public SonOfCodDbContext() { }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

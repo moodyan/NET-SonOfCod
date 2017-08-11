@@ -10,20 +10,16 @@ namespace SonOfCod.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly SonOfCodDbContext _db;
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-
-        public ProductsController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, SonOfCodDbContext db)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _db = db;
-        }
+        private SonOfCodDbContext db = new SonOfCodDbContext();
 
         public IActionResult Index()
         {
-            return View(_db.Products.ToList());
+            return View(db.Products.ToList());
+        }
+        public IActionResult Details(int id)
+        {
+            var thisProduct = db.Products.FirstOrDefault(products => products.ProductId == id);
+            return View(thisProduct);
         }
     }
 }

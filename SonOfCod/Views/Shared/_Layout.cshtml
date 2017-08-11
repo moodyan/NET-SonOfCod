@@ -11,9 +11,9 @@
     <nav class="navbar navbar-default" id="navbar-one" role="navigation">
         <div class="container" id="navbar">
             <div class="navbar-nav" id="nav-one">
-                <div id="navlink">@Html.ActionLink("Recipes", "Index", "Home")</div>
-                <div id="navlink">@Html.ActionLink("Locations", "Index", "Home")</div>
-                <div id="navlink">@Html.ActionLink("Contact Us", "Index", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Our Boats", "Boats", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Locations", "Locations", "Home")</div>
+                <div id="navlink">@Html.ActionLink("Contact Us", "Contact", "Home")</div>
             </div>
         </div>
     </nav>
@@ -23,7 +23,7 @@
                 <div id="navlink">@Html.ActionLink("HOME", "Index", "Home")</div>
                 <div id="navlink">@Html.ActionLink("ABOUT US", "About", "Home")</div>
                 <div id="navlink">@Html.ActionLink("PRODUCTS", "Index", "Products")</div>
-                <div id="navlink">@Html.ActionLink("SIGN UP", "Index", "Newsletter")</div>
+                <div id="navlink">@Html.ActionLink("SIGN UP", "Create", "Recepients")</div>
             </div>
         </div>
     </nav>
@@ -31,7 +31,7 @@
         @RenderBody()
     </div>
     <div class="footer">
-        <div>@Html.ActionLink("ADMIN PORTAL", "Index", "Account")</div>
+        <div>@Html.ActionLink("ADMIN PORTAL", "Login", "Account")</div>
     </div>
 </body>
 </html>

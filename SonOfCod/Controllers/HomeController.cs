@@ -12,5 +12,21 @@ namespace SonOfCod.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Boats()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Locations()
+        {
+            return View();
+        }
     }
 }
