@@ -1,0 +1,9 @@
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\bin\Debug\netcoreapp1.1\SonOfCod.deps.json
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\bin\Debug\netcoreapp1.1\SonOfCod.runtimeconfig.json
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\bin\Debug\netcoreapp1.1\SonOfCod.runtimeconfig.dev.json
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\bin\Debug\netcoreapp1.1\SonOfCod.dll
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\bin\Debug\netcoreapp1.1\SonOfCod.pdb
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\obj\Debug\netcoreapp1.1\SonOfCod.csprojResolveAssemblyReference.cache
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\obj\Debug\netcoreapp1.1\SonOfCod.AssemblyInfo.cs
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\obj\Debug\netcoreapp1.1\SonOfCod.dll
+C:\Users\alyssamoody\Desktop\SonOfCod\SonOfCod\obj\Debug\netcoreapp1.1\SonOfCod.pdb
