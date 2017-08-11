@@ -11,12 +11,12 @@ namespace SonOfCod.Tests
         {
             //Arrange
             var product = new Product();
-
+            product.Name = "Albacore Tuna";
             //Act
             var result = product.Name;
 
             //Assert
-            Assert.Equal("ALBACORE TUNA", result);
+            Assert.Equal("Albacore Tuna", result);
         }
     }
 }
