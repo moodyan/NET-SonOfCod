@@ -1,5 +1,23 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Product Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model SonOfCod.Models.Product
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+<hr />
+<img src=@Html.DisplayFor(model => model.Image) alt="fish photo done broke">
+<br />
+<br />
+@Html.DisplayNameFor(model => model.Cost): $@Html.DisplayFor(model => model.Cost)<br />
+@Html.DisplayNameFor(model => model.Source): @Html.DisplayFor(model => model.Source)
+<br />
+@Html.DisplayNameFor(model => model.Season): @Html.DisplayFor(model => model.Season)
+<br />
+@Html.DisplayNameFor(model => model.Method): @Html.DisplayFor(model => model.Method)
+<br />
+@Html.DisplayNameFor(model => model.Size): @Html.DisplayFor(model => model.Size)
+<br />
+@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)
+<hr />
+
+<p>@Html.ActionLink("Back to products", "Index")</p>

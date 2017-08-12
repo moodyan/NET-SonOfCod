@@ -1,4 +1,21 @@
-﻿.footer {
+﻿html {
+  height: 100%;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 10rem;
+  min-height: 100%;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center; }
+
+.footer {
   display: flex;
   position: absolute;
   right: 0;
@@ -6,7 +23,8 @@
   left: 0;
   padding: 20px;
   height: 80px;
-  width: 100%; }
+  width: 100%;
+  background-color: cornflowerblue; }
 
 #navbar-one {
   height: 5vh;
@@ -38,4 +56,40 @@
       width: 100%; }
       .navbar-default #navbar .navbar-nav #navlink {
         display: flex; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .cards .card {
+    position: relative;
+    flex: 0 0 300px;
+    margin: 10px;
+    background-color: white;
+    height: 315px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border: none; }
+    .cards .card .container {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px solid lightgrey; }
+      .cards .card .container img {
+        max-width: 100%; }
+      .cards .card .container .text {
+        padding: 0 10px 10px; }
+      .cards .card .container button {
+        background-color: navy;
+        border: 0;
+        padding: 10px;
+        margin: 5px;
+        width: 90%;
+        align-self: center;
+        margin-top: auto; }
+        .cards .card .container button a {
+          color: white; }
 

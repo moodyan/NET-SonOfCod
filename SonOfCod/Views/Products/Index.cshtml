@@ -1,5 +1,21 @@
-﻿@{
+﻿@model IEnumerable<SonOfCod.Models.Product>
+@{
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2>List of products</h2>
+<main class="cards">
+    @foreach (var product in Model)
+    {
+        <article class="card">
+            <div class="container">
+                <img src=@Html.DisplayFor(image => product.Image) alt="fish photo">
+                <div class="text">
+                    <h3>@Html.DisplayFor(name => product.Name)</h3>
+                    <p>$@Html.DisplayFor(text => product.Cost)</p>
+                </div>
+                <button>@Html.ActionLink("Product Details", "Details", new { id = product.ProductId })</button>
+            </div>
+        </article>
+    }
+</main>

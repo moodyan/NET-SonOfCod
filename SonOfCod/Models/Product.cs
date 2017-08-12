@@ -18,6 +18,7 @@ namespace SonOfCod.Models
         public string Method { get; set; }
         public string Size { get; set; }
         public string Description { get; set; }
+        public string Image { get; set; }
         public decimal Cost { get; set; }
     }
 }
