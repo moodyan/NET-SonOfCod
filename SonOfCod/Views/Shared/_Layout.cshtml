@@ -4,10 +4,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    <div id="logo">
+        <h4>SON</h4><h4>OF</h4><h4>COD</h4>
+    </div>
     <nav class="navbar navbar-default" id="navbar-one" role="navigation">
         <div class="container" id="navbar">
             <div class="navbar-nav" id="nav-one">
@@ -31,7 +35,7 @@
         @RenderBody()
     </div>
     <div class="footer">
-        <div>@Html.ActionLink("ADMIN PORTAL", "Login", "Account")</div>
+        @Html.ActionLink("ADMIN PORTAL", "Login", "Account")
     </div>
 </body>
 </html>
