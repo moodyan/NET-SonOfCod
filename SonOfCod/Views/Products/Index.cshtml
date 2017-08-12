@@ -3,7 +3,8 @@
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>List of products</h2>
+<h2>Our Products</h2>
+<br />
 <main class="cards">
     @foreach (var product in Model)
     {
@@ -11,7 +12,7 @@
             <div class="container">
                 <img src=@Html.DisplayFor(image => product.Image) alt="fish photo">
                 <div class="text">
-                    <h3>@Html.DisplayFor(name => product.Name)</h3>
+                    <h4>@Html.DisplayFor(name => product.Name)</h4>
                     <p>$@Html.DisplayFor(text => product.Cost)</p>
                 </div>
                 <button>@Html.ActionLink("Product Details", "Details", new { id = product.ProductId })</button>

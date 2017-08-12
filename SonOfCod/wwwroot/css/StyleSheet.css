@@ -93,3 +93,68 @@ body {
         .cards .card .container button a {
           color: white; }
 
+.product {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .product #product-info {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 15px; }
+    .product #product-info #product-details {
+      flex: 1 0 0;
+      padding-right: 20px; }
+    .product #product-info #product-desc {
+      flex: 1 0 0;
+      padding-left: 30px; }
+
+.strong {
+  font-weight: bold; }
+
+.home-slider {
+  height: 80vh;
+  display: flex; }
+  .home-slider .pic-stack {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    -webkit-animation: fading 18s infinite;
+    animation: fading 18s infinite;
+    background-repeat: no-repeat;
+    margin-bottom: 30px; }
+
+@-webkit-keyframes fading {
+  0% {
+    background: url("../img/home9.jpg");
+    background-size: cover; }
+  25% {
+    background: url("../img/home4.jpg");
+    background-size: cover; }
+  50% {
+    background: url("../img/home7.jpg");
+    background-size: cover; }
+  75% {
+    background: url("../img/home12.jpeg");
+    background-size: cover; }
+  100% {
+    background: url("../img/home6.jpg");
+    background-size: cover; } }
+
+@keyframes fading {
+  0% {
+    background: url("../img/home9.jpg");
+    background-size: cover; }
+  25% {
+    background: url("../img/home4.jpg");
+    background-size: cover; }
+  50% {
+    background: url("../img/home7.jpg");
+    background-size: cover; }
+  75% {
+    background: url("../img/home12.jpeg");
+    background-size: cover; }
+  100% {
+    background: url("../img/home6.jpg");
+    background-size: cover; } }
+
