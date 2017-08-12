@@ -10,6 +10,7 @@ namespace SonOfCod.Models
     public class SonOfCodDbContext : IdentityDbContext<ApplicationUser>
     {
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Subscriber> Subscribers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {

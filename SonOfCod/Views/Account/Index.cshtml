@@ -12,7 +12,7 @@
     <p>Hello @User.Identity.Name!</p>
     @using (Html.BeginForm("LogOff", "Account"))
     {
-        @Html.ActionLink("Mailing List Recipients", "Recepients", "Newsletter")
+        @Html.ActionLink("Mailing List Subscribers", "Subscribers", "Admin")
         <br />
         <input type="submit" class="btn btn-default" value="Log out" />
     }

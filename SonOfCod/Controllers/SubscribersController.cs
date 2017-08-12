@@ -8,13 +8,13 @@ using Microsoft.AspNetCore.Identity;
 
 namespace SonOfCod.Controllers
 {
-    public class RecepientsController : Controller
+    public class SubscribersController : Controller
     {
         private readonly SonOfCodDbContext _db;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public RecepientsController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, SonOfCodDbContext db)
+        public SubscribersController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, SonOfCodDbContext db)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -30,11 +30,11 @@ namespace SonOfCod.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create(Subscriber subscriber)
         {
-            _db.Products.Add(product);
+            _db.Subscribers.Add(subscriber);
             _db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Subscribers");
         }
     }
 }

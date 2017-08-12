@@ -1,0 +1,11 @@
+﻿@model IEnumerable<SonOfCod.Models.Subscriber>
+@{
+    ViewData["Title"] = "Admin - Subscribers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Mailing List Recepients</h2>
+
+@foreach (var subscriber in Model)
+            {
+    <li>@subscriber.Name - Email: @subscriber.Email</li>
+}

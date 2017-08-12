@@ -1,0 +1,32 @@
+﻿@model SonOfCod.Models.Subscriber
+@{
+    ViewData["Title"] = "Newsletter Sign Up";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Subscribe To Our Newsletter</h2>
+<hr />
+@using (Html.BeginForm())
+{  
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+        
+    @Html.LabelFor(model => model.Email)
+    @Html.EditorFor(model => model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+        
+    @Html.LabelFor(model => model.Birthday)
+    @Html.EditorFor(model => model.Birthday)
+    @Html.ValidationMessageFor(model => model.Birthday)
+        
+    @Html.LabelFor(model => model.Zip)
+    @Html.EditorFor(model => model.Zip)
+    @Html.ValidationMessageFor(model => model.Zip)
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+}
+<div>
+    @Html.ActionLink("Back to Home", "Index", "Home")
+</div>
