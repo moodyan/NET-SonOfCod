@@ -31,10 +31,8 @@ body {
     min-height: 20vh;
     z-index: 10;
     padding-top:12px;
-
     h4 {
         color: white;
-        text-shadow: 3px 3px 3px lightgrey;
     }
 }
 
@@ -250,10 +248,67 @@ form {
     }
     .btn {
         margin-top: 30px; 
-        .btn:hover {
-            border: 5px solid black;
-        }
+    }
+    input .btn:hover {
+        border: 5px solid black;
+        cursor: pointer;
     }
 }
 
+.blue {
+    color: midnightblue;
+}
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        position: relative;
+        flex: 0 0 500px;
+        margin: 10px;
+        background-color: white;
+        max-height: 350px;
+        height: 350px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border: none;
+
+        .container {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            min-height: 315px;
+        }
+
+        #boat1 {
+            background-image: url("../img/boat1.jpg");
+            background-size: cover;
+        }
+
+        #boat2 {
+            background-image: url("../img/boat2.jpg");
+            background-size: cover;
+        }
+
+        #boat3 {
+            background-image: url("../img/boat3.jpg");
+            background-size: cover;
+        }
+
+        #boat4 {
+            background-image: url("../img/boat4.jpg");
+            background-size: cover;
+        }
+
+        #boat4:hover, #boat3:hover, #boat2:hover, #boat1:hover {
+            background-image: none;
+            background-color: black;
+        }
+    }
+}
